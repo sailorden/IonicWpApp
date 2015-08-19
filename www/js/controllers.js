@@ -53,4 +53,16 @@ angular.module('starter.controllers', [])
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
-});
+})
+
+
+.controller('HomeCtrl', function($scope, $stateParams) {
+    $scope.isContinue = true;
+    $scope.myActiveSlide = 1;
+    $scope.slideHasChanged = function(index) {
+      console.log("Slide Index is" + index)  ;
+    };
+})
+;
+
+
