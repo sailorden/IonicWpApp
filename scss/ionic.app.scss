@@ -24,20 +24,3 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 
 
-.next-button {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    background-color: #000;
-    opacity: 0.5;
-    line-height:40px;
-    vertical-align:middle;
-    span {
-        display: block;
-        color: $light;
-        font-size: 14px;
-        text-align: center;
-    }
-}

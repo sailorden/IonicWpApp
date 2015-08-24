@@ -7851,14 +7851,7 @@ a.button {
     .slider .slider-slide .box img {
       max-width: 100%;
       max-height: 100%;
-      width: 100%;
-      bottom: 0;
-      left: 0;
-      margin: auto;
-      overflow: auto;
-      position: fixed;
-      right: 0;
-      top: 0; }
+      height: 100%; }
     .slider .slider-slide .box h1 {
       color: #fff;
       padding: 20px; }
