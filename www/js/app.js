@@ -41,6 +41,20 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                         controller: 'HomeCtrl'
 
                     })
+
+
+                    .state('app.login', {
+                        url: '/user-login',
+                        views: {
+                            'menuContent': {
+                                templateUrl: 'templates/login.html',
+                                controller: 'subAccountCtrl'
+                            }
+                        }
+                    })
+
+
+
                     .state('app.search', {
                         url: '/search',
                         views: {

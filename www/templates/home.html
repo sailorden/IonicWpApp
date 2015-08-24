@@ -2,18 +2,31 @@
 
     <ion-slide-box  does-continue="isContinue" active-slide="myActiveSlide" show-pager="true" on-slide-changed="slideHasChanged($index)">
         <ion-slide>
-            <div class="box"><img src="img/slide1.png"></div>
+            <div class="box slide1">
+                <img src="img/slide1.png" alt="Slide" />                
+            </div>
         </ion-slide>
         <ion-slide>
-            <div class="box"><img src="img/slide2.jpg"></div>
+            <div class="box slide2">
+                <img src="img/slide2.png">
+            </div>
         </ion-slide>
         <ion-slide>
-            <div class="box pink"><img src="img/slide3.png"></div>
+            <div class="box slide3">
+                <img src="img/slide3.png">
+            </div>
         </ion-slide>
 
         <ion-slide>
-            <div class="box pink"><img src="img/slide4.png"></div>
+            <div class="box slide4">
+                <img src="img/slide4.png">
+            </div>
         </ion-slide>
+
     </ion-slide-box>
+
+    <div class="next-button" ng-click="nextButtonClick()">
+        <span>NEXT</span>
+    </div>
 
 </ion-view>
