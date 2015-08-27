@@ -2,14 +2,34 @@
     <ion-content class="login-page"  scroll="false" >
         <div class="login">
             <div class="row">
-                <div class="col col-center">
+                <div class="col col-top">
                     <div class="login-image">
-                    <img src="img/login.png" alt="Login" />
+                        <img src="img/login.png" alt="Login" />
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col">
+                    <div class="list">
+                        <label class="item item-input">
+                            <input type="text" placeholder="Username">
+                        </label>
+                        <label class="padding">&nbsp;</label>
+                        <label class="item item-input pa">
+                            <input type="text" placeholder="Password">
+                        </label>
+
+                    </div>
+                </div>
+            </div>
+            
+            <div class="padding">
+                <button class="button button-block button-calm" ng-click="updateUserProfile(updateform.$valid)">Login</button>
+            </div>
 
         </div>
+
+
 
     </ion-content>
 
