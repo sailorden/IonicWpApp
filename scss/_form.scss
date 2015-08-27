@@ -8,29 +8,29 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
     background: $inputbox !important;   
 }
 
+
+
 .category-detail {
     .item-input {
-        
+        background: $light !important;  
+    }
+    input[type="text"] {
+        background: $light !important;  
     }
     .list-inset {
-        
+
+    }
+    .placeholder-icon {
+        color: #000;
+        &:first-child {
+            padding-right: 6px;
+        }
+        &:last-child {
+            padding-left: 6px;
+        }
     }
 }
 
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    $light !important;
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:    $light !important;
-    opacity:  1;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:    $light !important;
-    opacity:  1;
-}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color:    $light !important;
-}
 
 .placeholder-icon {
     color: #fff;
@@ -41,6 +41,8 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
         padding-left: 6px;
     }
 }
+
+
 
 .underline {
     border-top: solid 3px $light;

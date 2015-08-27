@@ -36,6 +36,10 @@ body {
 
 .category-detail {
     background: $light;
+
+    &.has-header {
+        top: 150px;
+    }
 }
 .signup-form {
 
@@ -142,7 +146,7 @@ body {
 }
 
 .item-category > img:first-child {    
-        border-radius: 0px !important;    
+    border-radius: 0px !important;    
 }
 .item-category  {
     p {
@@ -156,10 +160,41 @@ body {
     h2 {
         font-size: 17px;
     }
-    
+
 }
 
 .padding-zero {
     padding: 0 !important;
 }
 
+
+.category-header {
+    max-height: 150px;
+    .bar-light {
+        min-height: 150px;
+        background: #ec6c20;
+        background-image: url('../img/everyday.png');
+        background-size: contain;        
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .header-item {
+        height: 140px;
+        line-height: 140px;
+        .nav-bar-title {
+            font-size: 40px;
+            color: $light;            
+            font-style: italic;
+        }
+    }
+    
+    .bar .button.button-icon .icon:before {
+        color: #ae587a;
+    }
+    
+    
+}
+
+.bar .button.button-icon .icon:before, .bar .button.button-icon:before, .bar .button.button-icon.icon-left:before, .bar .button.button-icon.icon-right:before  {
+        color: #ae587a;
+    }
