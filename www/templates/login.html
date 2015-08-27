@@ -1,5 +1,5 @@
 <ion-view view-title="Login" hide-nav-bar="true">
-    <ion-content class="login-page"  scroll="false" >
+    <ion-content class="login-page"  scroll="true" >
         <div class="login">
             <div class="row">
                 <div class="col col-top">
@@ -12,19 +12,38 @@
                 <div class="col">
                     <div class="list">
                         <label class="item item-input">
+                               <i class="icon ion-person placeholder-icon"></i>
                             <input type="text" placeholder="Username">
                         </label>
-                        <label class="padding">&nbsp;</label>
+                        <div class="padding-horizontal">&nbsp;</div>
                         <label class="item item-input pa">
+                            <i class="icon ion-unlocked placeholder-icon"></i>
                             <input type="text" placeholder="Password">
                         </label>
 
                     </div>
                 </div>
             </div>
-            
+
             <div class="padding">
-                <button class="button button-block button-calm" ng-click="updateUserProfile(updateform.$valid)">Login</button>
+                <button class="button button-block button-calm" ng-click="signIn()">Login</button>
+            </div>
+
+            <div class="row">
+                <div class="col col-center">
+                    <span class="underline">&nbsp;</span>
+                    <br />
+                    <p>
+                        Don’t have an account yet? <br />
+                        Sign up with one of the following methods.
+                    </p>
+                    
+                    <br />
+                    <p>
+                        <span class="circle-button" ng-click="login()"><img src="img/newuser.png" /></span>
+                        <span class="facebook-button"><img src="img/facebook.png" /></span>
+                    </p>
+                </div>
             </div>
 
         </div>

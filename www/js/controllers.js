@@ -80,7 +80,7 @@ angular.module('starter.controllers', [])
                     $scope.endSlide++;
                 }
                 else if ($ionicSlideBoxDelegate.currentIndex() === 3 && $scope.endSlide === 1) {
-                    $state.go('app.login');
+                    $state.go('login');
                 } else {
                     $scope.endSlide = 0;
                 }
@@ -88,7 +88,50 @@ angular.module('starter.controllers', [])
         })
 
 
-        .controller('UserSignIn', function ($scope,$state) {
+        .controller('UserSignIn', function ($scope, $state, $ionicModal, $timeout) {
+
+
+            $scope.signIn = function () {
+                $state.go('app.search');
+            }
+
+            // Form data for the login modal
+            $scope.loginData = {};
+            $scope.signUpData = {};
+            // Create the login modal that we will use later
+            $ionicModal.fromTemplateUrl('templates/signup.html', {
+                scope: $scope
+            }).then(function (modal) {
+                $scope.modal = modal;
+            });
+
+            // Triggered in the login modal to close it
+            $scope.closeLogin = function () {
+                $scope.modal.hide();
+            };
+
+            // Open the login modal
+            $scope.login = function () {
+                $scope.modal.show();
+            };
+
+            // Perform the login action when the user submits the login form
+            $scope.doLogin = function () {
+                console.log('Doing login', $scope.loginData);
+
+                // Simulate a login delay. Remove this and replace with your login
+                // code if using a login system
+                $timeout(function () {
+                    $scope.closeLogin();
+                }, 1000);
+            };
+        })
+
+
+        .controller('SearchCtrl', function ($scope, $stateParams) {
+        })
+
+        .controller('CategoriesCtrl', function ($scope, $stateParams) {
         })
         ;
 

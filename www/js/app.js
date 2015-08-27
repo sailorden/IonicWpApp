@@ -43,14 +43,11 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     })
 
 
-                    .state('app.login', {
+                    .state('login', {
                         url: '/user-login',
-                        views: {
-                            'menuContent': {
-                                templateUrl: 'templates/login.html',
-                                controller: 'UserSignIn'
-                            }
-                        }
+                        templateUrl: 'templates/login.html',
+                        controller: 'UserSignIn'
+
                     })
 
 
@@ -59,16 +56,18 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                         url: '/search',
                         views: {
                             'menuContent': {
-                                templateUrl: 'templates/search.html'
+                                templateUrl: 'templates/search.html',
+                                controller: 'SearchCtrl'
                             }
                         }
                     })
 
-                    .state('app.browse', {
-                        url: '/browse',
+                    .state('app.categories', {
+                        url: '/categories',
                         views: {
                             'menuContent': {
-                                templateUrl: 'templates/browse.html'
+                                templateUrl: 'templates/categories.html',
+                                controller: 'CategoriesCtrl'
                             }
                         }
                     })

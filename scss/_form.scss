@@ -33,3 +33,9 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
     padding-left: 6px;
   }
 }
+
+.underline {
+    border-top: solid 3px $light;
+    min-width: 30px;
+    display: inline-block
+}

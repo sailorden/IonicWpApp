@@ -25,12 +25,110 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "site.scss";
 @import "form.scss";
 
-.login-image {
-    max-width: 150px;
+body {
+    color: $light;
+    background: $royal;
+}
+
+.scroll-content {
+    background: $royal;
+}
+
+.signup-form {
+
+    .list {
+        max-width: 80%;
+        margin: 10px auto;
+    }
+}
+
+.scroll-content > .scroll {
+    height: 100%;
+}
+
+.circle-button {
+    display: inline-block;
+    max-width:50px;
+    margin-right:20px;
+    img {
+        width: 100%;
+    }
+}
+
+.facebook-button {
+    display: inline-block;
+    max-width:50px;
+    img {
+        width: 100%;
+    }
+}
+.login-image {    
     margin:0 auto;
-    
+    max-width: 150px;
+    margin-bottom:20px;    
     img {
         width: 100%;
         display: block;
     }
+}
+
+
+.categorieslist {
+    .item {
+        background-color: #944ea6;
+        text-align: center;
+        font-size: 50px;
+        min-height: 150px;
+        line-height: 150px;
+        vertical-align: middle;
+        color: $light;
+            font-style: italic;
+
+    }
+    .cat-eat {
+        background-color: #944ea6;
+
+        background-image: url('../img/eat.png');
+        background-size: contain;        
+        background-repeat: no-repeat;
+        background-position-x: 10%;
+
+    }
+    .cat-stay {
+        background-color: #1a93c0;
+        background-image: url('../img/stay.png');
+        background-size: contain;        
+        background-repeat: no-repeat;
+        background-position-x: 100%;
+        background-position-y: bottom;
+    }
+    .cat-enjoy {
+        background-color: #3cb5b5;
+        background-image: url('../img/enjoy.png');
+        background-size: contain;        
+        background-repeat: no-repeat;
+        background-position-x: 100%;
+    }
+    .cat-shop {
+        background-color: #fcd920;
+        background-image: url('../img/shop.png');
+        background-size: contain;        
+        background-repeat: no-repeat;
+
+    }
+    .cat-day {
+        background-color: #ec6c20;
+        background-image: url('../img/everyday.png');
+        background-size: contain;        
+        background-repeat: no-repeat;
+        background-position:center;
+    }
+}
+
+.bar.bar-stable .title   {
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+    background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
