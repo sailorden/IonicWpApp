@@ -1,37 +1,45 @@
 .item-input {
-  background: $inputbox !important;   
+    background: $inputbox !important;   
 }
 
 
 textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
     color: $light;
-  background: $inputbox !important;   
+    background: $inputbox !important;   
 }
 
+.category-detail {
+    .item-input {
+        
+    }
+    .list-inset {
+        
+    }
+}
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    $light !important;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    $light !important;
-   opacity:  1;
+    color:    $light !important;
+    opacity:  1;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    $light !important;
-   opacity:  1;
+    color:    $light !important;
+    opacity:  1;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    $light !important;
+    color:    $light !important;
 }
 
 .placeholder-icon {
-  color: #fff;
-  &:first-child {
-    padding-right: 6px;
-  }
-  &:last-child {
-    padding-left: 6px;
-  }
+    color: #fff;
+    &:first-child {
+        padding-right: 6px;
+    }
+    &:last-child {
+        padding-left: 6px;
+    }
 }
 
 .underline {

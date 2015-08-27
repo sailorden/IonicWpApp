@@ -34,6 +34,9 @@ body {
     background: $royal;
 }
 
+.category-detail {
+    background: $light;
+}
 .signup-form {
 
     .list {
@@ -73,6 +76,11 @@ body {
 }
 
 
+.margin-zero {
+    margin: 0 !important;
+}
+
+
 .categorieslist {
     .item {
         background-color: #944ea6;
@@ -82,7 +90,7 @@ body {
         line-height: 150px;
         vertical-align: middle;
         color: $light;
-            font-style: italic;
+        font-style: italic;
 
     }
     .cat-eat {
@@ -126,9 +134,32 @@ body {
 }
 
 .bar.bar-stable .title   {
-/*    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
-    background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
-    color:transparent;
-    -webkit-background-clip: text;
-    background-clip: text;*/
+    /*    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+        background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+        color:transparent;
+        -webkit-background-clip: text;
+        background-clip: text;*/
 }
+
+.item-category > img:first-child {    
+        border-radius: 0px !important;    
+}
+.item-category  {
+    p {
+        font-size: 12px;
+        line-height: 1;
+        .restaurant-name {
+            display: inline-block;
+            float: right;
+        }
+    }
+    h2 {
+        font-size: 17px;
+    }
+    
+}
+
+.padding-zero {
+    padding: 0 !important;
+}
+

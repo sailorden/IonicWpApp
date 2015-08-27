@@ -71,12 +71,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                             }
                         }
                     })
-                    .state('app.playlists', {
-                        url: '/playlists',
+                    .state('app.categorydetail', {
+                        url: '/category-detail/:categoryId',
                         views: {
                             'menuContent': {
-                                templateUrl: 'templates/playlists.html',
-                                controller: 'PlaylistsCtrl'
+                                templateUrl: 'templates/category_datail.html',
+                                controller: 'CategoryDetailCtrl'
                             }
                         }
                     })

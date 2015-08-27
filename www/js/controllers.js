@@ -131,7 +131,14 @@ angular.module('starter.controllers', [])
         .controller('SearchCtrl', function ($scope, $stateParams) {
         })
 
-        .controller('CategoriesCtrl', function ($scope, $stateParams) {
+        .controller('CategoriesCtrl', function ($scope, $state) {
+            $scope.showCategoryDetail = function (id) {
+                $state.go('app.categorydetail');
+            }
+
+        })
+
+        .controller('CategoryDetailCtrl', function ($scope, $stateParams) {
         })
         ;
 

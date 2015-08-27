@@ -7948,6 +7948,9 @@ body {
 .scroll-content {
   background: #1a93c0; }
 
+.category-detail {
+  background: #fff; }
+
 .signup-form .list {
   max-width: 80%;
   margin: 10px auto; }
@@ -7975,6 +7978,9 @@ body {
   .login-image img {
     width: 100%;
     display: block; }
+
+.margin-zero {
+  margin: 0 !important; }
 
 .categorieslist .item {
   background-color: #944ea6;
@@ -8017,8 +8023,23 @@ body {
   background-position: center; }
 
 .bar.bar-stable .title {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22));
-  background-image: gradient(linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22));
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text; }
+  /*    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+        background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+        color:transparent;
+        -webkit-background-clip: text;
+        background-clip: text;*/ }
+
+.item-category > img:first-child {
+  border-radius: 0px !important; }
+
+.item-category p {
+  font-size: 12px;
+  line-height: 1; }
+  .item-category p .restaurant-name {
+    display: inline-block;
+    float: right; }
+.item-category h2 {
+  font-size: 17px; }
+
+.padding-zero {
+  padding: 0 !important; }
