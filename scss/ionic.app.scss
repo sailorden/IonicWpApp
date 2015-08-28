@@ -13,8 +13,8 @@ $energized:                       #ffc900 !default;
 $assertive:                       #ef473a !default;
 $royal:                           #1a93c0 !default;
 $dark:                            #444 !default;
-$inputbox:                         #5fb4d3 !default;
-
+$inputbox:                        #5fb4d3 !default;
+$menu-bg:                         #3ca3c9 !default;
 
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
@@ -24,6 +24,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "slide-box.scss";
 @import "site.scss";
 @import "form.scss";
+@import "menu.scss";
 
 body {
     color: $light;
@@ -187,14 +188,14 @@ body {
             font-style: italic;
         }
     }
-    
+
     .bar .button.button-icon .icon:before {
         color: #ae587a;
     }
-    
-    
+
+
 }
 
 .bar .button.button-icon .icon:before, .bar .button.button-icon:before, .bar .button.button-icon.icon-left:before, .bar .button.button-icon.icon-right:before  {
-        color: #ae587a;
-    }
+    color: #ae587a;
+}

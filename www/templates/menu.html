@@ -1,6 +1,6 @@
 <ion-side-menus enable-menu-with-back-views="true">
     <ion-side-menu-content>
-        <ion-nav-bar class="bar-stable">
+        <ion-nav-bar class="bar-royal">
             <ion-nav-back-button>
             </ion-nav-back-button>
 
@@ -13,49 +13,53 @@
     </ion-side-menu-content>
 
     <ion-side-menu side="left">
-        <ion-header-bar class="bar-stable">
-            <h1 class="title">BACK</h1>
+        <ion-header-bar class="bar-royal">
+            <h1 class="title">MENU</h1>
         </ion-header-bar>
         <ion-content>
-            <ion-list>
+            <ion-list class="custommenulist">
                 <ion-item menu-close href="#/app/search">
-                    PROFILE
+                    <span class="menu-icon"> <i class="icon ion-person-stalker"></i></span>PROFILE
                 </ion-item>
 
                 <ion-item menu-close href="#/app/search">
-                    DONATE
+                    <span class="menu-icon"> <i class="icon ion-person-stalker"></i></span>DONATE
                 </ion-item>
 
                 <ion-item menu-close href="#/app/categories">
-                    Categories
+                    <span class="menu-icon"> <i class="icon ion-search"></i></span>Categories
                 </ion-item>
 
                 <ion-item menu-close href="#/app/search">
-                    featured
+                    <span class="menu-icon"> <i class="icon ion-search"></i></span>featured
                 </ion-item>
 
                 <ion-item menu-close href="#/app/search">
-                    Search
+                    <span class="menu-icon"> <i class="icon ion-search"></i></span>Search
                 </ion-item>
 
 
                 <ion-item menu-close href="#/app/search">
-                    gallery
+                    <span class="menu-icon"> <i class="icon ion-images"></i></span>gallery
                 </ion-item>
 
                 <ion-item menu-close href="#/app/search">
-                    map
+                  <span class="menu-icon"> <i class="icon ion-location"></i></span>map
                 </ion-item>
                 <ion-item menu-close href="#/app/search">
-                    favorites
+                    <span class="menu-icon"> <i class="icon ion-search"></i></span>favorites
                 </ion-item>
 
                 <ion-item menu-close href="#/app/playlists">
-                    options
+                    <span class="menu-icon"> <i class="icon ion-search"></i></span>options
                 </ion-item>
 
                 <ion-item menu-close href="#/app/playlists">
-                   <i class="icon ion-search"></i> contact
+                    <span class="menu-icon"> <i class="icon ion-at"></i></span> contact
+                </ion-item>
+                
+                 <ion-item menu-close href="#/app/playlists">
+                   <span class="menu-icon"> <i class="icon ion-search"></i></span> Logout
                 </ion-item>
             </ion-list>
         </ion-content>
