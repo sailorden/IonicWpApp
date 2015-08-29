@@ -290,6 +290,10 @@ angular.module('starter.controllers', [])
                 }
             ]
         })
+        
+        
+          .controller('addReviewCtrl', function ($scope, $stateParams) {
+        })
         ;
 
 

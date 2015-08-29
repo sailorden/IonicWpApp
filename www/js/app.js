@@ -99,6 +99,17 @@ angular.module('starter', ['ionic', 'starter.controllers','ion-gallery'])
                                 controller: 'GallaryCtrl'
                             }
                         }
+                    })
+                    
+                    
+                     .state('app.addreview', {
+                        url: '/add-review',
+                        views: {
+                            'menuContent': {
+                                templateUrl: 'templates/add_review.html',
+                                controller: 'addReviewCtrl'
+                            }
+                        }
                     });
                     
                     
