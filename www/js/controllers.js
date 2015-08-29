@@ -52,7 +52,7 @@ angular.module('starter.controllers', [])
             ];
         })
 
-        .controller('PlaylistCtrl', function ($scope, $stateParams) {
+        .controller('MainCtrl', function ($scope, $stateParams) {
         })
 
 
@@ -92,7 +92,7 @@ angular.module('starter.controllers', [])
 
 
             $scope.signIn = function () {
-                $state.go('app.search');
+                $state.go('app.main');
             }
 
             // Form data for the login modal
@@ -139,6 +139,156 @@ angular.module('starter.controllers', [])
         })
 
         .controller('CategoryDetailCtrl', function ($scope, $stateParams) {
+        })
+
+        .controller('GallaryCtrl', function ($scope, $stateParams) {
+
+            $scope.items = [
+                {
+                    src: 'img/gallary.png',
+                    sub: 'This is a <b>subtitle</b>'
+                },
+                {
+                    src: 'img/gallary.png',
+                    sub: '' /* Not showed */
+                },
+                {
+                    src: 'img/gallary.png',
+                },
+                {
+                    src: 'img/gallary.png',
+                },{
+                    src: 'img/gallary.png',
+                    sub: 'This is a <b>subtitle</b>'
+                },
+                {
+                    src: 'img/gallary.png',
+                    sub: '' /* Not showed */
+                },
+                {
+                    src: 'img/gallary.png',
+                },
+                {
+                    src: 'img/gallary.png',
+                },{
+                    src: 'img/gallary.png',
+                    sub: 'This is a <b>subtitle</b>'
+                },
+                {
+                    src: 'img/gallary.png',
+                    sub: '' /* Not showed */
+                },
+                {
+                    src: 'img/gallary.png',
+                },
+                {
+                    src: 'img/gallary.png',
+                },{
+                    src: 'img/gallary.png',
+                    sub: 'This is a <b>subtitle</b>'
+                },
+                {
+                    src: 'img/gallary.png',
+                    sub: '' /* Not showed */
+                },
+                {
+                    src: 'img/gallary.png',
+                },
+                {
+                    src: 'img/gallary.png',
+                },{
+                    src: 'img/gallary.png',
+                    sub: 'This is a <b>subtitle</b>'
+                },
+                {
+                    src: 'img/gallary.png',
+                    sub: '' /* Not showed */
+                },
+                {
+                    src: 'img/gallary.png',
+                },
+                {
+                    src: 'img/gallary.png',
+                },{
+                    src: 'img/gallary.png',
+                    sub: 'This is a <b>subtitle</b>'
+                },
+                {
+                    src: 'img/gallary.png',
+                    sub: '' /* Not showed */
+                },
+                {
+                    src: 'img/gallary.png',
+                },
+                {
+                    src: 'img/gallary.png',
+                },{
+                    src: 'img/gallary.png',
+                    sub: 'This is a <b>subtitle</b>'
+                },
+                {
+                    src: 'img/gallary.png',
+                    sub: '' /* Not showed */
+                },
+                {
+                    src: 'img/gallary.png',
+                },
+                {
+                    src: 'img/gallary.png',
+                },{
+                    src: 'img/gallary.png',
+                    sub: 'This is a <b>subtitle</b>'
+                },
+                {
+                    src: 'img/gallary.png',
+                    sub: '' /* Not showed */
+                },
+                {
+                    src: 'img/gallary.png',
+                },
+                {
+                    src: 'img/gallary.png',
+                },{
+                    src: 'img/gallary.png',
+                    sub: 'This is a <b>subtitle</b>'
+                },
+                {
+                    src: 'img/gallary.png',
+                    sub: '' /* Not showed */
+                },
+                {
+                    src: 'img/gallary.png',
+                },
+                {
+                    src: 'img/gallary.png',
+                },{
+                    src: 'img/gallary.png',
+                    sub: 'This is a <b>subtitle</b>'
+                },
+                {
+                    src: 'img/gallary.png',
+                    sub: '' /* Not showed */
+                },
+                {
+                    src: 'img/gallary.png',
+                },
+                {
+                    src: 'img/gallary.png',
+                },{
+                    src: 'img/gallary.png',
+                    sub: 'This is a <b>subtitle</b>'
+                },
+                {
+                    src: 'img/gallary.png',
+                    sub: '' /* Not showed */
+                },
+                {
+                    src: 'img/gallary.png',
+                },
+                {
+                    src: 'img/gallary.png',
+                }
+            ]
         })
         ;
 

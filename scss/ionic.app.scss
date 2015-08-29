@@ -10,11 +10,13 @@ $positive:                        #1a93c0 !default;
 $calm:                            #944ea6 !default;
 $balanced:                        #33cd5f !default;
 $energized:                       #ffc900 !default;
-$assertive:                       #ef473a !default;
+$assertive:                       #ec6c20 !default;
 $royal:                           #1a93c0 !default;
 $dark:                            #444 !default;
 $inputbox:                        #5fb4d3 !default;
 $menu-bg:                         #3ca3c9 !default;
+
+$bar-height:                      44px !default;
 
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
@@ -32,7 +34,7 @@ body {
 }
 
 .scroll-content {
-    background: $royal;
+    background: $light;
 }
 
 .category-detail {
@@ -198,4 +200,69 @@ body {
 
 .bar .button.button-icon .icon:before, .bar .button.button-icon:before, .bar .button.button-icon.icon-left:before, .bar .button.button-icon.icon-right:before  {
     color: #ae587a;
+}
+
+
+
+
+//Home
+
+.homeslider {
+    max-height: 250px;
+    
+    img {
+        width: 100%;
+        
+        display: block;
+    }
+}
+
+.box {
+    min-height: 70px;
+    
+     &.stay-home {
+        background-color: #1a93c0;
+    }
+    
+     &.enjoy-home {
+        background-color: #3cb5b5;
+    }
+    
+     &.shop-home {
+        background-color: #fcd920;
+    }
+    
+     &.eat-home {
+        background-color: #944ea6;
+    }   
+    
+    h2 {
+        text-align: center;
+        color: $light;
+        line-height: 60px;
+        padding: 0;
+        margin: 0;
+        font-style: italic;
+    }
+    
+}
+.home-list {
+    margin-bottom: 0;
+}
+
+
+
+//Gallary
+
+.gallary-arrow {
+    color: $light !important; 
+    .left-text {
+        padding-left: 6px;
+        display: inline-block;
+    }
+    
+    .right-text {
+        padding-right: 6px;
+        display: inline-block;
+    }
 }

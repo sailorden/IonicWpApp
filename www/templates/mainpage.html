@@ -1,0 +1,83 @@
+<ion-view view-title="">
+    <ion-nav-bar class="bar-light ">
+
+
+        <ion-nav-title>
+            New York, USA            
+        </ion-nav-title>
+        <ion-nav-buttons side="left">
+            <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+            </button>
+        </ion-nav-buttons>
+        <!--ion-nav-buttons side="right" >
+            <button class="button  button-clear small-text" style="color:red; font-size:14px;" >AVBRYT
+            </button>
+        </ion-nav-buttons-->
+    </ion-nav-bar>
+    <ion-content>
+
+        <ion-slide-box on-slide-changed="slideHasChanged($index)" class="homeslider">
+            <ion-slide>
+                <div class="homeslide"><img src="img/home-slide.png"/> </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="homeslide"><img src="img/home-slide.png"/></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="homeslide"><img src="img/home-slide.png"/></div>
+            </ion-slide>
+        </ion-slide-box>
+
+        <div class="list home-list">
+            <a class="item item-avatar item-category" href="#">
+                <img src="img/juicy.png">
+                <h2>Juicy Burger Co.</h2>
+                <div class="row padding-zero">
+                    <div class="col-70 padding-zero" style="width: 70%;float: left">
+                        <p>
+                            300 Main St.<br />
+                            3.8 km away <br />
+                            (302) 293-2919
+                            <span class="restaurant-name">Fast Food</span>
+                        </p>
+                    </div>
+
+                    <div class="col-30 text-right" style="width: 30%;float: right">
+                        <p>$$$$</p>
+                        <img src="img/stars.png" width="45" />
+                    </div>
+                </div>
+
+            </a>
+        </div>
+
+        <div class="row padding-zero">
+            <div class="col col-50 padding-zero">
+                <div class="box enjoy-home">
+                    <h2>ENJOY</h2>
+                </div>
+            </div>
+            <div class="col col-50 padding-zero">
+
+                <div class="box stay-home">
+                    <h2>STAY</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row padding-zero">
+            <div class="col col-50 padding-zero">
+                <div class="box eat-home">
+                    <h2>EAT</h2>
+                </div>
+            </div>
+            <div class="col col-50 padding-zero">
+                <div class="box shop-home">
+                    <h2>SHOP</h2>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+
+
+</ion-view>
