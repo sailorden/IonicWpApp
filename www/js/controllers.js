@@ -301,6 +301,9 @@ angular.module('starter.controllers', [])
 
         .controller('donateOptionsCtrl', function ($scope, $stateParams) {
         })
+
+        .controller('donateCtrl', function ($scope, $stateParams) {
+        })
         ;
 
 

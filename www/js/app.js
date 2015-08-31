@@ -132,6 +132,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ion-gallery'])
                             }
                         }
                     })
+                    
+                    
+                     .state('app.donate', {
+                        url: '/donate',
+                        views: {
+                            'menuContent': {
+                                templateUrl: 'templates/donate.html',
+                                controller: 'donateCtrl'
+                            }
+                        }
+                    })
 
 
                     ;
