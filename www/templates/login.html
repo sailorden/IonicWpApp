@@ -1,48 +1,52 @@
 <ion-view view-title="Login" hide-nav-bar="true">
-    <ion-content class="login-page"  scroll="false" >
+    <ion-content class="login-page"  scroll="true" >
         <div class="login">
-            <form name="loginform" id="signupform" novalidate="novalidate">
-                <div class="row">
-                    <div class="col">                   
-                        <div class="login-image">
-                            <img src="img/login.png" alt="Login" />
-                        </div>
+
+            <div class="row">
+                <div class="col col-top">
+                    <div class="login-image">
+                        <img src="img/login.png" alt="Login" />
                     </div>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="list">
+                        <label class="item item-input">
+                               <i class="icon ion-person placeholder-icon"></i>
+                            <input type="text" placeholder="Username">
+                        </label>
+                        <div class="padding-horizontal">&nbsp;</div>
+                        <label class="item item-input pa">
+                            <i class="icon ion-unlocked placeholder-icon"></i>
+                            <input type="text" placeholder="Password">
+                        </label>
 
-                <div class="row">
-                    <div class="col">
-                        <div class="list list-inset">
-                            <label class="item item-input">
-                                <i class="icon ion-person placeholder-icon"></i>
-                                <input type="text" placeholder="UserName">
-                            </label>
-                        </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="row">
-                    <div class="col">
-                        <div class="list list-inset">
-                            <label class="item item-input">
-                                <i class="icon ion-locked placeholder-icon"></i>
-                                <input type="password" placeholder="Password">
-                            </label>
-                        </div>
-                    </div>
+            <div class="padding">
+                <button class="button button-block button-calm" ng-click="signIn()">Login</button>
+            </div>
+
+            <div class="row">
+                <div class="col col-center">
+                    <span class="underline">&nbsp;</span>
+                    <br />
+                    <p>
+                        Don’t have an account yet? <br />
+                        Sign up with one of the following methods.
+                    </p>
+                    
+                    <br />
+                    <p>
+                        <span class="circle-button" ng-click="login()"><img src="img/newuser.png" /></span>
+                        <span class="facebook-button"><img src="img/facebook.png" /></span>
+                    </p>
                 </div>
+            </div>
 
-                <div class="row">
-                    <div class="col">
-                        <div class="padding">
-
-                            <button class="button button-block button-dark" ng-click="">REGISTRERA</button>
-
-                        </div>
-                    </div>
-                </div>
-
-            </form>
         </div>
 
     </ion-content>

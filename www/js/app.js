@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers'])
+angular.module('starter', ['ionic', 'starter.controllers','ion-gallery'])
 
         .run(function ($ionicPlatform) {
             $ionicPlatform.ready(function () {
@@ -43,14 +43,11 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                     })
 
 
-                    .state('app.login', {
+                    .state('login', {
                         url: '/user-login',
-                        views: {
-                            'menuContent': {
-                                templateUrl: 'templates/login.html',
-                                controller: 'UserSignIn'
-                            }
-                        }
+                        templateUrl: 'templates/login.html',
+                        controller: 'UserSignIn'
+
                     })
 
 
@@ -59,38 +56,53 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                         url: '/search',
                         views: {
                             'menuContent': {
-                                templateUrl: 'templates/search.html'
+                                templateUrl: 'templates/search.html',
+                                controller: 'SearchCtrl'
                             }
                         }
                     })
 
-                    .state('app.browse', {
-                        url: '/browse',
+                    .state('app.categories', {
+                        url: '/categories',
                         views: {
                             'menuContent': {
-                                templateUrl: 'templates/browse.html'
+                                templateUrl: 'templates/categories.html',
+                                controller: 'CategoriesCtrl'
                             }
                         }
                     })
-                    .state('app.playlists', {
-                        url: '/playlists',
+                    .state('app.categorydetail', {
+                        url: '/category-detail/:categoryId',
                         views: {
                             'menuContent': {
-                                templateUrl: 'templates/playlists.html',
-                                controller: 'PlaylistsCtrl'
+                                templateUrl: 'templates/category_datail.html',
+                                controller: 'CategoryDetailCtrl'
                             }
                         }
                     })
 
-                    .state('app.single', {
-                        url: '/playlists/:playlistId',
+                    .state('app.main', {
+                        url: '/homepage',
                         views: {
                             'menuContent': {
-                                templateUrl: 'templates/playlist.html',
-                                controller: 'PlaylistCtrl'
+                                templateUrl: 'templates/mainpage.html',
+                                controller: 'MainCtrl'
+                            }
+                        }
+                    })
+                    
+                    .state('app.gallary', {
+                        url: '/gallary',
+                        views: {
+                            'menuContent': {
+                                templateUrl: 'templates/gallary.html',
+                                controller: 'GallaryCtrl'
                             }
                         }
                     });
+                    
+                    
+                    
             // if none of the above states are matched, use this as the fallback
             $urlRouterProvider.otherwise('home');
         });
