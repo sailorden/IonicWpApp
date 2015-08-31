@@ -157,7 +157,7 @@ angular.module('starter.controllers', [])
                 },
                 {
                     src: 'img/gallary.png',
-                },{
+                }, {
                     src: 'img/gallary.png',
                     sub: 'This is a <b>subtitle</b>'
                 },
@@ -170,7 +170,7 @@ angular.module('starter.controllers', [])
                 },
                 {
                     src: 'img/gallary.png',
-                },{
+                }, {
                     src: 'img/gallary.png',
                     sub: 'This is a <b>subtitle</b>'
                 },
@@ -183,7 +183,7 @@ angular.module('starter.controllers', [])
                 },
                 {
                     src: 'img/gallary.png',
-                },{
+                }, {
                     src: 'img/gallary.png',
                     sub: 'This is a <b>subtitle</b>'
                 },
@@ -196,7 +196,7 @@ angular.module('starter.controllers', [])
                 },
                 {
                     src: 'img/gallary.png',
-                },{
+                }, {
                     src: 'img/gallary.png',
                     sub: 'This is a <b>subtitle</b>'
                 },
@@ -209,7 +209,7 @@ angular.module('starter.controllers', [])
                 },
                 {
                     src: 'img/gallary.png',
-                },{
+                }, {
                     src: 'img/gallary.png',
                     sub: 'This is a <b>subtitle</b>'
                 },
@@ -222,7 +222,7 @@ angular.module('starter.controllers', [])
                 },
                 {
                     src: 'img/gallary.png',
-                },{
+                }, {
                     src: 'img/gallary.png',
                     sub: 'This is a <b>subtitle</b>'
                 },
@@ -235,7 +235,7 @@ angular.module('starter.controllers', [])
                 },
                 {
                     src: 'img/gallary.png',
-                },{
+                }, {
                     src: 'img/gallary.png',
                     sub: 'This is a <b>subtitle</b>'
                 },
@@ -248,7 +248,7 @@ angular.module('starter.controllers', [])
                 },
                 {
                     src: 'img/gallary.png',
-                },{
+                }, {
                     src: 'img/gallary.png',
                     sub: 'This is a <b>subtitle</b>'
                 },
@@ -261,7 +261,7 @@ angular.module('starter.controllers', [])
                 },
                 {
                     src: 'img/gallary.png',
-                },{
+                }, {
                     src: 'img/gallary.png',
                     sub: 'This is a <b>subtitle</b>'
                 },
@@ -274,7 +274,7 @@ angular.module('starter.controllers', [])
                 },
                 {
                     src: 'img/gallary.png',
-                },{
+                }, {
                     src: 'img/gallary.png',
                     sub: 'This is a <b>subtitle</b>'
                 },
@@ -290,9 +290,16 @@ angular.module('starter.controllers', [])
                 }
             ]
         })
-        
-        
-          .controller('addReviewCtrl', function ($scope, $stateParams) {
+
+
+        .controller('addReviewCtrl', function ($scope, $stateParams) {
+        })
+
+
+        .controller('mapCtrl', function ($scope, $stateParams) {
+        })
+
+        .controller('donateOptionsCtrl', function ($scope, $stateParams) {
         })
         ;
 

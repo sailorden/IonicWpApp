@@ -1,0 +1,76 @@
+<ion-view view-title="">
+    <ion-nav-bar class="bar-light">
+
+
+        <ion-nav-title>
+            Donate Options
+        </ion-nav-title>
+        <ion-nav-buttons side="left">
+            <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+            </button>
+        </ion-nav-buttons>
+        <!--ion-nav-buttons side="right" >
+            <button class="button  button-clear small-text" style="color:red; font-size:14px;" >AVBRYT
+            </button>
+        </ion-nav-buttons-->
+    </ion-nav-bar>
+    <ion-content>
+        <div class="donateoptions">
+            <div class="donate-top">
+                <img src="img/donate-optons.png" alt="Donate" height="280" />
+            </div>
+            <div class="row-center">
+                <div class="col">
+                    <h1>You are a rockstar!</h1>
+                    <p>
+
+                        Petinerary is a free to download community App. <br /><br />
+
+                        By making a donation of any amount to the causes 
+                        we support you are also telling all of us that, at the end 
+                        of the day, it is all worth it and you appreciate it!
+                    </p>
+                </div>
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col col-50">
+                        <select class="" style="display: block;width: 100%">
+                            <option selected>Method</option>
+                            <option >Green</option>
+                            <option>Red</option>
+                        </select>
+                    </div>
+
+                    <div class="col col-50">
+                        <select class="" style="display: block;width: 100%">
+                            <option selected>Amount</option>
+                            <option >100</option>
+                            <option>200</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="list">                           
+                            <label class="item item-input">
+                                <textarea placeholder="Comments"></textarea>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="padding">
+                    <button class="button button-block button-assertive" ng-click="DonateNow()">DONATE</button>
+                    <p class="text-center">All donations are final and non-refundable.</p>
+
+
+
+                </div>
+            </form>
+        </div>
+
+    </ion-content>
+
+
+</ion-view>
