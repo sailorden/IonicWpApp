@@ -7901,5 +7901,9 @@ a.button {
   .login-page .login {
     text-align: center;
     padding: 20px; }
-    .login-page .login .login-image img {
-      max-width: 100%; }
+    .login-page .login .login-image {
+      max-width: 300px;
+      margin: 0 auto;
+      text-align: center; }
+      .login-page .login .login-image img {
+        max-width: 65%; }

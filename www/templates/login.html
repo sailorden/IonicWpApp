@@ -1,11 +1,50 @@
 <ion-view view-title="Login" hide-nav-bar="true">
     <ion-content class="login-page"  scroll="false" >
         <div class="login">
-            <div class="login-image">
-                <img src="img/login.png" alt="Login" />
-            </div>
+            <form name="loginform" id="signupform" novalidate="novalidate">
+                <div class="row">
+                    <div class="col">                   
+                        <div class="login-image">
+                            <img src="img/login.png" alt="Login" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="list list-inset">
+                            <label class="item item-input">
+                                <i class="icon ion-person placeholder-icon"></i>
+                                <input type="text" placeholder="UserName">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="list list-inset">
+                            <label class="item item-input">
+                                <i class="icon ion-locked placeholder-icon"></i>
+                                <input type="password" placeholder="Password">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="padding">
+
+                            <button class="button button-block button-dark" ng-click="">REGISTRERA</button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </form>
         </div>
-       
+
     </ion-content>
 
 </ion-view>
