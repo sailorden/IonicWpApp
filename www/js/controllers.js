@@ -307,6 +307,9 @@ angular.module('starter.controllers', [])
 
         .controller('donateSliderCtrl', function ($scope, $stateParams) {
         })
-        ;
+
+        .controller('featuredCtrl', function ($scope, $stateParams) {
+        })
+;
 
 

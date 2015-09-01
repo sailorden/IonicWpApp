@@ -153,6 +153,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ion-gallery'])
                             }
                         }
                     })
+                    
+                    
+                     .state('app.featured', {
+                        url: '/featured',
+                        views: {
+                            'menuContent': {
+                                templateUrl: 'templates/featured.html',
+                                controller: 'featuredCtrl'
+                            }
+                        }
+                    })
 
 
                     ;

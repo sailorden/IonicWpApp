@@ -8124,6 +8124,10 @@ body {
   .homeslider img {
     width: 100%;
     display: block; }
+  .homeslider .slider-pager {
+    bottom: 10px; }
+    .homeslider .slider-pager .slider-pager-page {
+      font-size: 10px; }
 
 .box {
   min-height: 70px; }
@@ -8218,3 +8222,16 @@ body {
     .donate-slider .slider-pager .slider-pager-page {
       color: #302e33;
       font-size: 10px; }
+
+.featured-items {
+  display: block; }
+  .featured-items .row {
+    margin-bottom: 30px; }
+  .featured-items .featured-img img {
+    width: 100%; }
+  .featured-items .featured-rating .featured-icons {
+    color: #0097d5;
+    font-size: 18px; }
+    .featured-items .featured-rating .featured-icons img {
+      padding-top: 0px;
+      float: right; }
