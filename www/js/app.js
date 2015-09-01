@@ -143,6 +143,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ion-gallery'])
                             }
                         }
                     })
+                    
+                      .state('app.donateslider', {
+                        url: '/donate-slider',
+                        views: {
+                            'menuContent': {
+                                templateUrl: 'templates/donate_slider.html',
+                                controller: 'donateSliderCtrl'
+                            }
+                        }
+                    })
 
 
                     ;

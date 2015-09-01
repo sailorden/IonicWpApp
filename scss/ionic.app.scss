@@ -328,7 +328,7 @@ body {
         color: #302e33;
         text-align: center;
     }
-    
+
     .cause {
         background-color: #3cb5b5;
         color: $light;
@@ -337,5 +337,32 @@ body {
         vertical-align: middle;
         margin: 20px 0px;
         text-align: center;
+    }
+}
+
+
+.donate-slider {
+    padding-bottom:30px;
+    .donateslider {
+        .slide-img {
+            max-height: 300px;
+            img {
+                width: 100%;
+            }
+        }
+
+        .slide-description {
+            padding: 15px;
+            p {
+                color: #302e33;
+            }
+        }
+    }
+    .slider-pager {
+        bottom:0;
+        .slider-pager-page {
+            color: #302e33;
+            font-size: 10px;
+        }
     }
 }

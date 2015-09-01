@@ -304,6 +304,9 @@ angular.module('starter.controllers', [])
 
         .controller('donateCtrl', function ($scope, $stateParams) {
         })
+
+        .controller('donateSliderCtrl', function ($scope, $stateParams) {
+        })
         ;
 
 

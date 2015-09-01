@@ -8202,3 +8202,19 @@ body {
   vertical-align: middle;
   margin: 20px 0px;
   text-align: center; }
+
+.donate-slider {
+  padding-bottom: 30px; }
+  .donate-slider .donateslider .slide-img {
+    max-height: 300px; }
+    .donate-slider .donateslider .slide-img img {
+      width: 100%; }
+  .donate-slider .donateslider .slide-description {
+    padding: 15px; }
+    .donate-slider .donateslider .slide-description p {
+      color: #302e33; }
+  .donate-slider .slider-pager {
+    bottom: 0; }
+    .donate-slider .slider-pager .slider-pager-page {
+      color: #302e33;
+      font-size: 10px; }
