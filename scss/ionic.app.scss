@@ -5,7 +5,7 @@ in ionic's _variables.scss file.
 For example, you might change some of the default colors:
 */
 $light:                           #fff !default;
-$stable:                          #f8f8f8 !default;
+$stable:                          #fcd920 !default;
 $positive:                        #1a93c0 !default;
 $calm:                            #944ea6 !default;
 $balanced:                        #33cd5f !default;
@@ -419,18 +419,42 @@ body {
 
 }
 
+.place-review {
 .pet-review{
     color: #ec6c20;
     font-size: 17px;
     cursor: pointer;
     display: inline-block;
-    padding: 10px;
-
+    padding: 5px;
+    font-weight: 700;
 }
+
+#pet-review {
+     h5 {
+        font-size: 15px;
+        color: #ec6c20;
+    }
+}
+
+
 .human-review {
     color:#944ea6;
     font-size: 17px;
     cursor: pointer;
     display: inline-block;
-    padding: 10px;
+    padding: 5px;   
+    font-weight: 700;
+     
+}
+
+#human-review {
+    
+    h5 {
+        font-size: 15px;
+        color: #944ea6;
+    }
+}
+
+
+
 }

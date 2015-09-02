@@ -4,7 +4,7 @@
 
 
         <ion-nav-title>
-            EVERYDAY
+            Juicy Burger Co.
         </ion-nav-title>
         <ion-nav-buttons side="left">
             <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
@@ -16,10 +16,98 @@
         </ion-nav-buttons-->
     </ion-nav-bar>
     <ion-content>
-        <ion-list>
-            <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
-                {{playlist.title}}
-            </ion-item>
-        </ion-list>
+        <div class="review-main" style="background-color: #1a93c0;padding: 10px">
+            <div class="title" style="color: #fff;font-size: 16px">
+                average price&nbsp;&nbsp;<span class="step size-18" style="font-size: 13px;color: #edd42b"><i class="icon ion-social-usd"></i>&nbsp;<i class="icon ion-social-usd"></i>&nbsp;<i class="icon ion-social-usd"></i>&nbsp;<i class="icon ion-social-usd"></i>&nbsp;<i class="icon ion-social-usd"></i>&nbsp; </span> <br />
+                user review<span class="right-text" style="float: right;position: relative;top: -10px;color: #edd42b;padding-right: 10px"><i class="icon ion-plus-round ri"></i></span>
+            </div>
+        </div>
+
+        <div class="card">
+
+            <div class="item item-text-wrap">
+                <div class="review-detail">
+                    <div class="item item-avatar">
+                        <img src="img/review-main.png" >
+                        <h2>Rachel Gallenger</h2>
+                        <div class="row padding-zero">
+                            <div class="col padding-zero">
+                                <p>
+                                    <span style="font-size:11px;">5 hours ago</span> <span class="stars" style="color: #fcd920;position: absolute;right: 0;top:16px"><i class="icon ion-star"></i><i class="icon ion-star"></i><i class="icon ion-star"></i><i class="icon ion-star"></i></span><br />
+                                    Lorem ipsum dolor sit amet, consectetur sera et adipiscing elit. Faucibus justo odio, vitae este lis tincidunt ex congue vitae. Nam commodo, sapi et facilisis ornare, nisi diam tincidunt.
+                                </p>
+                            </div>
+
+                           
+                        </div>
+                        
+                        <p>November 05, 1955</p>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        
+        
+         <div class="card">
+
+            <div class="item item-text-wrap">
+                <div class="review-detail">
+                    <div class="item item-avatar">
+                        <img src="img/review-main2.png" >
+                        <h2>James Smith</h2>
+                        <div class="row padding-zero">
+                            <div class="col padding-zero">
+                                <p>
+                                    <span style="font-size:11px;">5 hours ago</span> <span class="stars" style="color: #fcd920;position: absolute;right: 0;top:16px"><i class="icon ion-star"></i><i class="icon ion-star"></i><i class="icon ion-star"></i><i class="icon ion-star"></i></span><br />
+                                    Lorem ipsum dolor sit amet, consectetur sera et adipiscing elit. Faucibus justo odio, vitae este lis tincidunt ex congue vitae. Nam commodo, sapi et facilisis ornare, nisi diam tincidunt.
+                                </p>
+                            </div>
+
+                           
+                        </div>
+                        
+                        <p>November 05, 1955</p>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        
+        
+        <div class="card">
+
+            <div class="item item-text-wrap">
+                <div class="review-detail">
+                    <div class="item item-avatar">
+                        <img src="img/review-main2.png" >
+                        <h2>James Smith</h2>
+                        <div class="row padding-zero">
+                            <div class="col padding-zero">
+                                <p>
+                                    <span style="font-size:11px;">5 hours ago</span> <span class="stars" style="color: #fcd920;position: absolute;right: 0;top:16px"><i class="icon ion-star"></i><i class="icon ion-star"></i><i class="icon ion-star"></i><i class="icon ion-star"></i></span><br />
+                                    Lorem ipsum dolor sit amet, consectetur sera et adipiscing elit. Faucibus justo odio, vitae este lis tincidunt ex congue vitae. Nam commodo, sapi et facilisis ornare, nisi diam tincidunt.
+                                </p>
+                            </div>
+
+                           
+                        </div>
+                        
+                        <p>November 05, 1955</p>
+                    </div>
+                </div>   
+            </div>
+        </div>
     </ion-content>
+    
+      <ion-footer-bar align-title="left" class="bar-stable">
+        <div class="buttons">
+            
+            <a class="button icon-left ion-chevron-left button-clear button-light gallary-arrow">
+                <span class="left-text">REVIEWS</span></a>
+        </div>
+        <h1 class="title">&nbsp;</h1>
+        <div class="buttons" ng-click="doSomething()">
+            <a class="button icon-right ion-chevron-right button-clear button-light gallary-arrow">
+                <span class="right-text">GALLARY</span></a>
+        </div>
+    </ion-footer-bar>
 </ion-view>
