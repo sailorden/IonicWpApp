@@ -7897,7 +7897,7 @@ a.button {
   height: 100%;
   width: 100%;
   display: block;
-  background-color: #1a93c0; }
+  background-color: #1a93c0 !important; }
   .login-page .login {
     text-align: center;
     padding: 20px; }
