@@ -8267,3 +8267,12 @@ body {
 .place-review #human-review h5 {
   font-size: 15px;
   color: #944ea6; }
+
+.place-info {
+  text-align: center;
+  padding: 25px; }
+  .place-info p {
+    color: #3cb5b5; }
+    .place-info p .title {
+      color: #000;
+      font-weight: 700; }

@@ -322,6 +322,9 @@ angular.module('starter.controllers', [])
 
         .controller('featuredCtrl', function ($scope, $stateParams) {
         })
+
+ .controller('placeInfoCtrl', function ($scope, $stateParams) {
+        })
         ;
 
 

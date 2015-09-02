@@ -175,6 +175,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ion-gallery'])
                             }
                         }
                     })
+                    
+                     .state('app.placeinfo', {
+                        url: '/place-information',
+                        views: {
+                            'menuContent': {
+                                templateUrl: 'templates/place_info.html',
+                                controller: 'placeInfoCtrl'
+                            }
+                        }
+                    })
 
 
                     ;

@@ -458,3 +458,18 @@ body {
 
 
 }
+
+
+//Place Info
+
+.place-info {
+    text-align: center;
+    padding:25px;
+    p{
+        color:#3cb5b5;
+        .title {
+            color: #000;
+            font-weight: 700;
+        }
+    }
+}
