@@ -143,6 +143,27 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ion-gallery'])
                             }
                         }
                     })
+                    
+                      .state('app.donateslider', {
+                        url: '/donate-slider',
+                        views: {
+                            'menuContent': {
+                                templateUrl: 'templates/donate_slider.html',
+                                controller: 'donateSliderCtrl'
+                            }
+                        }
+                    })
+                    
+                    
+                     .state('app.featured', {
+                        url: '/featured',
+                        views: {
+                            'menuContent': {
+                                templateUrl: 'templates/featured.html',
+                                controller: 'featuredCtrl'
+                            }
+                        }
+                    })
 
 
                     ;

@@ -1,0 +1,68 @@
+<ion-view view-title="">
+    <ion-nav-bar class="bar-light">
+
+
+        <ion-nav-title>
+            Donate
+        </ion-nav-title>
+        <ion-nav-buttons side="left">
+            <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+            </button>
+        </ion-nav-buttons>
+        <!--ion-nav-buttons side="right" >
+            <button class="button  button-clear small-text" style="color:red; font-size:14px;" >AVBRYT
+            </button>
+        </ion-nav-buttons-->
+    </ion-nav-bar>
+    <ion-content>
+        <div class="donate-slider">
+            <ion-slide-box on-slide-changed="slideHasChanged($index)" class="donateslider">
+                <ion-slide>
+                    <div class="donateslide">
+                        <div class="slide-img">
+                            <img src="img/donate-slide1.png"/> 
+                        </div>
+                        <div class="slide-btn">
+                            <button class="button button-block button-assertive" ng-click="DonateNow()">DONATE</button>
+                        </div>
+                        <div class="slide-description">
+                            <h5 class="text-center">SPCA</h5>
+                            <p>
+                                Our mission is to be the premier shopping
+                                and inspiration destination for the top brands, 
+                                latest trends and exclusive styles of high 
+                                quality fashion and performance sunglasses.
+                            </p>
+                        </div>
+                    </div>
+                </ion-slide>
+                <ion-slide>
+                    <div class="donateslide">
+                        <div class="donateslide">
+                            <div class="slide-img">
+                                <img src="img/donate-slide2.png"/> 
+                            </div>
+                            <div class="slide-btn">
+                                <button class="button button-block button-assertive" ng-click="DonateNow()">DONATE</button>
+                            </div>
+
+                            <div class="slide-description">
+                                <h5 class="text-center">PETA</h5>
+                                <p>
+                                    Our mission is to be the premier shopping
+                                    and inspiration destination for the top brands, 
+                                    latest trends and exclusive styles of high 
+                                    quality fashion and performance sunglasses.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </ion-slide>
+
+            </ion-slide-box>
+        </div>
+
+    </ion-content>
+
+
+</ion-view>
