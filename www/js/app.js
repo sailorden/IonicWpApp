@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers','ion-gallery'])
+angular.module('starter', ['ionic', 'starter.controllers', 'ion-gallery'])
 
         .run(function ($ionicPlatform) {
             $ionicPlatform.ready(function () {
@@ -90,7 +90,7 @@ angular.module('starter', ['ionic', 'starter.controllers','ion-gallery'])
                             }
                         }
                     })
-                    
+
                     .state('app.gallary', {
                         url: '/gallary',
                         views: {
@@ -99,10 +99,56 @@ angular.module('starter', ['ionic', 'starter.controllers','ion-gallery'])
                                 controller: 'GallaryCtrl'
                             }
                         }
-                    });
+                    })
+
+
+                    .state('app.addreview', {
+                        url: '/add-review',
+                        views: {
+                            'menuContent': {
+                                templateUrl: 'templates/add_review.html',
+                                controller: 'addReviewCtrl'
+                            }
+                        }
+                    })
+
+
+                    .state('app.map', {
+                        url: '/google-map',
+                        views: {
+                            'menuContent': {
+                                templateUrl: 'templates/map.html',
+                                controller: 'mapCtrl'
+                            }
+                        }
+                    })
+
+                    .state('app.donateoptions', {
+                        url: '/donate-options',
+                        views: {
+                            'menuContent': {
+                                templateUrl: 'templates/donate-options.html',
+                                controller: 'donateOptionsCtrl'
+                            }
+                        }
+                    })
                     
                     
-                    
+                     .state('app.donate', {
+                        url: '/donate',
+                        views: {
+                            'menuContent': {
+                                templateUrl: 'templates/donate.html',
+                                controller: 'donateCtrl'
+                            }
+                        }
+                    })
+
+
+                    ;
+
+
+
             // if none of the above states are matched, use this as the fallback
             $urlRouterProvider.otherwise('home');
         });
