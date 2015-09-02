@@ -8239,3 +8239,24 @@ body {
     .featured-items .featured-rating .featured-icons img {
       padding-top: 0px;
       float: right; }
+
+.review-list {
+  color: #8c6c8f; }
+  .review-list h2 {
+    color: #8c6c8f; }
+  .review-list p {
+    color: #8c6c8f; }
+
+.pet-review {
+  color: #ec6c20;
+  font-size: 17px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px; }
+
+.human-review {
+  color: #944ea6;
+  font-size: 17px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px; }

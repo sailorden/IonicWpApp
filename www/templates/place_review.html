@@ -1,0 +1,87 @@
+<ion-view view-title="">
+
+    <ion-nav-bar class="bar-light ">
+
+
+        <ion-nav-title>
+            EVERYDAY
+        </ion-nav-title>
+        <ion-nav-buttons side="left">
+            <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+            </button>
+        </ion-nav-buttons>
+        <!--ion-nav-buttons side="right" >
+            <button class="button  button-clear small-text" style="color:red; font-size:14px;" >AVBRYT
+            </button>
+        </ion-nav-buttons-->
+    </ion-nav-bar>
+    <ion-content>
+        <div class="place-review">
+            <ion-slide-box on-slide-changed="slideHasChanged($index)" class="homeslider">
+                <ion-slide>
+                    <div class="homeslide"><img src="img/home-slide.png"/> </div>
+                </ion-slide>
+                <ion-slide>
+                    <div class="homeslide"><img src="img/home-slide.png"/></div>
+                </ion-slide>
+                <ion-slide>
+                    <div class="homeslide"><img src="img/home-slide.png"/></div>
+                </ion-slide>
+            </ion-slide-box>
+
+            <div class="list home-list review-list">
+                <a class="item item-avatar item-category" href="#">
+                    <img src="img/juicy.png">
+                    <h2>Juicy Burger Co.</h2>
+                    <div class="row padding-zero">
+                        <div class="col-70 padding-zero" style="width: 70%;float: left">
+                            <p>
+                                300 Main St.<br />
+                                3.8 km away <br />
+                                (302) 293-2919
+                                <span class="restaurant-name">Fast Food</span>
+                            </p>
+                        </div>
+
+                        <div class="col-30 text-right" style="width: 30%;float: right">
+                            <span class="step size-18" style="font-size: 14px"> <i class="icon ion-social-usd"></i><i class="icon ion-social-usd"></i><i class="icon ion-social-usd"></i><i class="icon ion-social-usd"></i> </span> <br />
+                            <span class="stars"><i class="icon ion-star"></i><i class="icon ion-star"></i><i class="icon ion-star"></i><i class="icon ion-star"></i><i class="icon ion-star"></i></span>
+                        </div>
+                    </div>
+
+                </a>
+            </div>
+
+            <div class="row">
+                <div class="col col-50 text-center">
+                    <a class="human-review" ng-click="showHumanReview()">
+                        HUMAN <br />REVIEW
+                    </a>
+                </div>
+                <div class="col col-50 text-center" ng-click="showPetReview()">
+                    <a class="pet-review">
+                        PET <br />REVIEW
+                    </a>
+                </div>
+
+            </div>
+
+            <div id="human-review" ng-show="human">
+                <div class="card">
+                    <div class="item item-text-wrap">
+                        Humans Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="pet-review" ng-show="!human">
+                <div class="card">
+                    <div class="item item-text-wrap">
+                        Pets Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
