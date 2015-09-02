@@ -296,6 +296,18 @@ angular.module('starter.controllers', [])
         })
 
 
+        .controller('placeReviewCtrl', function ($scope, $stateParams) {
+            $scope.human = true;
+            $scope.showHumanReview = function () {
+                $scope.human = true;
+            };
+
+            $scope.showPetReview = function () {
+                $scope.human = false;
+            };
+        })
+
+
         .controller('mapCtrl', function ($scope, $stateParams) {
         })
 
@@ -310,6 +322,6 @@ angular.module('starter.controllers', [])
 
         .controller('featuredCtrl', function ($scope, $stateParams) {
         })
-;
+        ;
 
 

@@ -7901,8 +7901,12 @@ a.button {
   .login-page .login {
     text-align: center;
     padding: 20px; }
-    .login-page .login .login-image img {
-      max-width: 100%; }
+    .login-page .login .login-image {
+      max-width: 300px;
+      margin: 0 auto;
+      text-align: center; }
+      .login-page .login .login-image img {
+        max-width: 65%; }
 
 .item-input {
   /*background: $inputbox !important;   */ }
@@ -8235,3 +8239,24 @@ body {
     .featured-items .featured-rating .featured-icons img {
       padding-top: 0px;
       float: right; }
+
+.review-list {
+  color: #8c6c8f; }
+  .review-list h2 {
+    color: #8c6c8f; }
+  .review-list p {
+    color: #8c6c8f; }
+
+.pet-review {
+  color: #ec6c20;
+  font-size: 17px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px; }
+
+.human-review {
+  color: #944ea6;
+  font-size: 17px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px; }

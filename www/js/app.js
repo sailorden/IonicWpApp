@@ -113,6 +113,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ion-gallery'])
                     })
 
 
+                    .state('app.placereview', {
+                        url: '/place-review',
+                        views: {
+                            'menuContent': {
+                                templateUrl: 'templates/place_review.html',
+                                controller: 'placeReviewCtrl'
+                            }
+                        }
+                    })
+
+
                     .state('app.map', {
                         url: '/google-map',
                         views: {
@@ -132,9 +143,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ion-gallery'])
                             }
                         }
                     })
-                    
-                    
-                     .state('app.donate', {
+
+
+                    .state('app.donate', {
                         url: '/donate',
                         views: {
                             'menuContent': {
@@ -143,8 +154,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ion-gallery'])
                             }
                         }
                     })
-                    
-                      .state('app.donateslider', {
+
+                    .state('app.donateslider', {
                         url: '/donate-slider',
                         views: {
                             'menuContent': {
@@ -153,9 +164,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ion-gallery'])
                             }
                         }
                     })
-                    
-                    
-                     .state('app.featured', {
+
+
+                    .state('app.featured', {
                         url: '/featured',
                         views: {
                             'menuContent': {

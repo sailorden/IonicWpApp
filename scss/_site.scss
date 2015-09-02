@@ -8,8 +8,11 @@
         text-align: center;
         padding:20px;
         .login-image {
+            max-width:300px;
+            margin:0 auto;
+            text-align:center;
             img {  
-                max-width: 100%;
+                max-width: 65%;
                 
             }
         }

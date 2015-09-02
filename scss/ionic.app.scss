@@ -215,12 +215,12 @@ body {
 
         display: block;
     }
-    
-    
+
+
     .slider-pager {
         bottom:10px;
         .slider-pager-page {
-            
+
             font-size: 10px;
         }
     }
@@ -382,7 +382,7 @@ body {
 
 .featured-items {
     display: block;
-    
+
     .row {
         margin-bottom: 30px;
     }
@@ -396,11 +396,41 @@ body {
         .featured-icons {
             color: #0097d5;
             font-size: 18px;
-            
+
             img {
                 padding-top: 0px;
                 float: right;
             }
         }        
     }
+}
+
+
+.review-list {
+    color: #8c6c8f;
+
+    h2 {
+        color: #8c6c8f;
+    }
+
+    p {
+        color: #8c6c8f;
+    }
+
+}
+
+.pet-review{
+    color: #ec6c20;
+    font-size: 17px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+
+}
+.human-review {
+    color:#944ea6;
+    font-size: 17px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
 }
