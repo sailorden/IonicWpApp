@@ -1,3 +1,21 @@
+.header-top {
+    background-color: #fff;
+    padding: 10px;
+    .header-title {
+        color: #1a93c0;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 .login-page {
     height: 100%;
     width: 100%;
@@ -39,6 +57,7 @@
 .signup-page {   
     background-color: $positive !important;
     padding-top: 50px;
+    padding-bottom:50px;
 
     .item-input {
         background: $inputbox !important;

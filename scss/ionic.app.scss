@@ -37,6 +37,16 @@ body {
     background: $light;
 }
 
+.no-header {
+    top: 0px !important;
+}
+.bar.bar-light  {
+    border: none;
+    background: transparent;
+}
+.bar .buttons-left span  {
+    margin-top: 8px;
+}
 .category-detail {
     background: $light;
 
