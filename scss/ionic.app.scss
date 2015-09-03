@@ -45,13 +45,13 @@ body {
     background: transparent;
 }
 .bar .buttons-left span  {
-    
+
 }
 .category-detail {
     background: $light;
 
     &.has-header {
-        top: 150px;
+        top: 0px;
     }
 }
 .signup-form {
@@ -184,29 +184,23 @@ body {
 
 .category-header {
     max-height: 150px;
-    .bar-light {
+    .title {
         min-height: 150px;
         background: #ec6c20;
         background-image: url('../img/everyday.png');
         background-size: contain;        
         background-repeat: no-repeat;
         background-position: center;
-    }
-    .header-item {
-        height: 140px;
+        font-size: 40px;
+        color: $light;            
+        font-style: italic;
+            height: 140px;
         line-height: 140px;
-        .nav-bar-title {
-            font-size: 40px;
-            color: $light;            
-            font-style: italic;
-        }
-    }
-
-    .bar .button.button-icon .icon:before {
-        color: #ae587a;
+        text-align: center;
     }
 
 
+    
 }
 
 .bar .button.button-icon .icon:before, .bar .button.button-icon:before, .bar .button.button-icon.icon-left:before, .bar .button.button-icon.icon-right:before  {
@@ -431,40 +425,40 @@ body {
 }
 
 .place-review {
-.pet-review{
-    color: #ec6c20;
-    font-size: 17px;
-    cursor: pointer;
-    display: inline-block;
-    padding: 5px;
-    font-weight: 700;
-}
-
-#pet-review {
-     h5 {
-        font-size: 15px;
+    .pet-review{
         color: #ec6c20;
+        font-size: 17px;
+        cursor: pointer;
+        display: inline-block;
+        padding: 5px;
+        font-weight: 700;
     }
-}
 
-
-.human-review {
-    color:#944ea6;
-    font-size: 17px;
-    cursor: pointer;
-    display: inline-block;
-    padding: 5px;   
-    font-weight: 700;
-     
-}
-
-#human-review {
-    
-    h5 {
-        font-size: 15px;
-        color: #944ea6;
+    #pet-review {
+        h5 {
+            font-size: 15px;
+            color: #ec6c20;
+        }
     }
-}
+
+
+    .human-review {
+        color:#944ea6;
+        font-size: 17px;
+        cursor: pointer;
+        display: inline-block;
+        padding: 5px;   
+        font-weight: 700;
+
+    }
+
+    #human-review {
+
+        h5 {
+            font-size: 15px;
+            color: #944ea6;
+        }
+    }
 
 
 

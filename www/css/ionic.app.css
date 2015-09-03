@@ -8078,7 +8078,7 @@ body {
 .category-detail {
   background: #fff; }
   .category-detail.has-header {
-    top: 150px; }
+    top: 0px; }
 
 .signup-form .list {
   max-width: 80%;
@@ -8176,22 +8176,19 @@ body {
 
 .category-header {
   max-height: 150px; }
-  .category-header .bar-light {
+  .category-header .title {
     min-height: 150px;
     background: #ec6c20;
     background-image: url('../img/everyday.png');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center; }
-  .category-header .header-item {
+    background-position: center;
+    font-size: 40px;
+    color: #fff;
+    font-style: italic;
     height: 140px;
-    line-height: 140px; }
-    .category-header .header-item .nav-bar-title {
-      font-size: 40px;
-      color: #fff;
-      font-style: italic; }
-  .category-header .bar .button.button-icon .icon:before {
-    color: #ae587a; }
+    line-height: 140px;
+    text-align: center; }
 
 .bar .button.button-icon .icon:before, .bar .button.button-icon:before, .bar .button.button-icon.icon-left:before, .bar .button.button-icon.icon-right:before {
   color: #ae587a; }
