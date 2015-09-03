@@ -7902,11 +7902,68 @@ a.button {
     text-align: center;
     padding: 20px; }
     .login-page .login .login-image {
-      max-width: 300px;
+      max-height: 200px;
       margin: 0 auto;
       text-align: center; }
       .login-page .login .login-image img {
-        max-width: 65%; }
+        max-width: 100%;
+        margin-bottom: 50px; }
+  .login-page .item-input {
+    background: #5fb4d3 !important; }
+  .login-page textarea, .login-page input[type="text"], .login-page input[type="password"], .login-page input[type="datetime"], .login-page input[type="datetime-local"], .login-page input[type="date"], .login-page input[type="month"], .login-page input[type="time"], .login-page input[type="week"], .login-page input[type="number"], .login-page input[type="email"], .login-page input[type="url"], .login-page input[type="search"], .login-page input[type="tel"], .login-page input[type="color"] {
+    color: #fff;
+    background: #5fb4d3 !important; }
+  .login-page ::-webkit-input-placeholder {
+    color: #fff !important; }
+  .login-page :-moz-placeholder {
+    color: #fff !important; }
+  .login-page ::-moz-placeholder {
+    color: #fff !important; }
+  .login-page :-ms-input-placeholder {
+    color: #fff !important; }
+
+.signup-page {
+  background-color: #1a93c0 !important;
+  padding-top: 50px; }
+  .signup-page .item-input {
+    background: #5fb4d3 !important; }
+  .signup-page textarea, .signup-page input[type="text"], .signup-page input[type="password"], .signup-page input[type="datetime"], .signup-page input[type="datetime-local"], .signup-page input[type="date"], .signup-page input[type="month"], .signup-page input[type="time"], .signup-page input[type="week"], .signup-page input[type="number"], .signup-page input[type="email"], .signup-page input[type="url"], .signup-page input[type="search"], .signup-page input[type="tel"], .signup-page input[type="color"] {
+    color: #fff;
+    background: #5fb4d3 !important; }
+  .signup-page ::-webkit-input-placeholder {
+    color: #fff !important; }
+  .signup-page :-moz-placeholder {
+    color: #fff !important; }
+  .signup-page ::-moz-placeholder {
+    color: #fff !important; }
+  .signup-page :-ms-input-placeholder {
+    color: #fff !important; }
+  .signup-page .upload-images {
+    position: relative;
+    text-align: center;
+    margin-bottom: 25px; }
+    .signup-page .upload-images .human-picture, .signup-page .upload-images .pet-picture {
+      height: 160px;
+      border: solid 1px #fff;
+      border-radius: 50%;
+      background-color: #5fb4d3;
+      vertical-align: middle;
+      color: #fff;
+      min-width: 160px;
+      display: inline-block;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 50px; }
+      .signup-page .upload-images .human-picture span, .signup-page .upload-images .pet-picture span {
+        font-size: 12px; }
+    .signup-page .upload-images .pet-picture {
+      height: 110px;
+      min-width: 110px;
+      padding-top: 25px;
+      position: relative;
+      z-index: 1;
+      left: -35px;
+      top: 40px; }
 
 .item-input {
   /*background: $inputbox !important;   */ }
@@ -7927,7 +7984,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
     padding-left: 6px; }
 
 .placeholder-icon {
-  color: #fff; }
+  color: #fff !important; }
   .placeholder-icon:first-child {
     padding-right: 6px; }
   .placeholder-icon:last-child {

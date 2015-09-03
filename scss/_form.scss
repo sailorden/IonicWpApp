@@ -33,7 +33,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 
 
 .placeholder-icon {
-    color: #fff;
+    color: #fff !important;
     &:first-child {
         padding-right: 6px;
     }
