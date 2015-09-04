@@ -71,7 +71,7 @@ angular.module('starter.controllers', [])
                     $scope.endSlide = 0;
                 }
                 if(index == 3) {
-                    $scope.endSlide++;
+                    $scope.endSlide = 1;
                 }
             };
 
