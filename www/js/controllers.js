@@ -70,6 +70,9 @@ angular.module('starter.controllers', [])
                 if (index < 3) {
                     $scope.endSlide = 0;
                 }
+                if(index == 3) {
+                    $scope.endSlide++;
+                }
             };
 
             $scope.nextButtonClick = function () {

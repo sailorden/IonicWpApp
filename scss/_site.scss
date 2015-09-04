@@ -1,3 +1,21 @@
+.header-top {
+    background-color: #fff;
+    padding: 10px;
+    .header-title {
+        color: #1a93c0;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 .login-page {
     height: 100%;
     width: 100%;
@@ -8,13 +26,83 @@
         text-align: center;
         padding:20px;
         .login-image {
-            max-width:300px;
+            max-height:200px;
             margin:0 auto;
             text-align:center;
             img {  
-                max-width: 65%;
-                
+                max-width: 100%;
+                margin-bottom: 50px;
+
             }
+        }
+    }
+
+
+    .item-input {
+        background: $inputbox !important;
+    }
+
+    textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
+        color: $light;
+        background: $inputbox !important;   
+    }
+
+    ::-webkit-input-placeholder {color: #fff !important;}
+    :-moz-placeholder           {color: #fff !important;}
+    ::-moz-placeholder          {color: #fff !important;}
+    :-ms-input-placeholder      {color: #fff !important;}  
+
+}
+
+.signup-page {   
+    background-color: $positive !important;
+    padding-top: 50px;
+    padding-bottom:50px;
+
+    .item-input {
+        background: $inputbox !important;
+    }
+
+    textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
+        color: $light;
+        background: $inputbox !important;   
+    }
+
+    ::-webkit-input-placeholder {color: #fff !important;}
+    :-moz-placeholder           {color: #fff !important;}
+    ::-moz-placeholder          {color: #fff !important;}
+    :-ms-input-placeholder      {color: #fff !important;}  
+
+    .upload-images {
+        position:relative;
+        text-align:center;
+        margin-bottom:25px;
+
+        .human-picture, .pet-picture {
+            height: 160px;
+            border: solid 1px #fff;
+            border-radius: 50%;
+            background-color: #5fb4d3;
+            vertical-align: middle;
+            color: #fff;
+            min-width: 160px;
+            display: inline-block;
+            margin: 0 auto;
+            text-align: center;
+            padding-top:50px;
+            span {
+                font-size: 12px;
+            }
+        }
+
+        .pet-picture {
+            height: 110px;
+            min-width: 110px;
+            padding-top: 25px;
+            position: relative;
+            z-index: 1;
+            left: -35px;
+            top: 40px;
         }
     }
 }
