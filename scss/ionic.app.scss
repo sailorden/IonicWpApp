@@ -351,6 +351,15 @@ body {
         vertical-align: middle;
         margin: 20px 0px;
         text-align: center;
+        a{
+            color: $light;
+            text-decoration:none;
+            
+            &:hover {
+                color: $light;
+                text-decoration:none;
+            }
+        }
     }
 }
 

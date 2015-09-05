@@ -9,10 +9,12 @@
             <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
             </button>
         </ion-nav-buttons>
-        <!--ion-nav-buttons side="right" >
-            <button class="button  button-clear small-text" style="color:red; font-size:14px;" >AVBRYT
-            </button>
-        </ion-nav-buttons-->
+       <ion-nav-buttons side="right" >
+                <span class="topsearch" ng-click="searchbtn()">
+                <i class="icon ion-search"></i>
+                </span>
+            
+        </ion-nav-buttons>
     </ion-nav-bar>
     <ion-content>
         <div class="donate">
@@ -38,7 +40,7 @@
             </div>
             
             <div class="cause">
-                THIS MONTH`S CAUSES
+                <a href="#/app/donate-slider" class="cause-link"> THIS MONTH`S CAUSES</a>
             </div>
             
             <div class="donate-footer text-center">

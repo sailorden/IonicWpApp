@@ -43,7 +43,10 @@ angular.module('starter.controllers', [])
 
 
 
-        .controller('MainCtrl', function ($scope, $stateParams) {
+        .controller('MainCtrl', function ($scope, $ionicModal, $timeout) {
+            $scope.searchbtn = function() {
+                
+            }
         })
 
 

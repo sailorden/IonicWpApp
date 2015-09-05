@@ -7900,6 +7900,12 @@ a.button {
     color: #1a93c0;
     text-align: center; }
 
+.topsearch {
+  display: inline-block;
+  padding: 10px;
+  font-size: 18px;
+  color: #b05c7d; }
+
 .login-page {
   height: 100%;
   width: 100%;
@@ -8281,6 +8287,12 @@ body {
   vertical-align: middle;
   margin: 20px 0px;
   text-align: center; }
+  .donate .cause a {
+    color: #fff;
+    text-decoration: none; }
+    .donate .cause a:hover {
+      color: #fff;
+      text-decoration: none; }
 
 .donate-slider {
   padding-bottom: 30px; }
