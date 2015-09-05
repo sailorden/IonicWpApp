@@ -185,6 +185,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ion-gallery'])
                             }
                         }
                     })
+                    
+                       .state('app.contact', {
+                        url: '/contact',
+                        views: {
+                            'menuContent': {
+                                templateUrl: 'templates/contact.html',
+                                controller: 'contactCtrl'
+                            }
+                        }
+                    })
 
 
                     ;

@@ -57,8 +57,11 @@
 .signup-page {   
     background-color: $positive !important;
     padding-top: 50px;
-    padding-bottom:50px;
+    
 
+    .signup-btn {
+    padding-bottom:50px;    
+    }
     .item-input {
         background: $inputbox !important;
     }

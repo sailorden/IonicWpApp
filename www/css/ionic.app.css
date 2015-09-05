@@ -7931,8 +7931,9 @@ a.button {
 
 .signup-page {
   background-color: #1a93c0 !important;
-  padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-top: 50px; }
+  .signup-page .signup-btn {
+    padding-bottom: 50px; }
   .signup-page .item-input {
     background: #5fb4d3 !important; }
   .signup-page textarea, .signup-page input[type="text"], .signup-page input[type="password"], .signup-page input[type="datetime"], .signup-page input[type="datetime-local"], .signup-page input[type="date"], .signup-page input[type="month"], .signup-page input[type="time"], .signup-page input[type="week"], .signup-page input[type="number"], .signup-page input[type="email"], .signup-page input[type="url"], .signup-page input[type="search"], .signup-page input[type="tel"], .signup-page input[type="color"] {

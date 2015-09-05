@@ -3,7 +3,7 @@
 
 
         <ion-nav-title>
-            New York, USA            
+
         </ion-nav-title>
         <ion-nav-buttons side="left">
             <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
@@ -14,8 +14,13 @@
             </button>
         </ion-nav-buttons-->
     </ion-nav-bar>
-    <ion-content>
-
+    <ion-content class="no-header">
+        <div class="header-top">
+            <div class="header-title">
+                <i class="icon ion-ios-location-outline"></i> <br />
+                New York, USA
+            </div>
+        </div>
         <ion-slide-box on-slide-changed="slideHasChanged($index)" class="homeslider">
             <ion-slide>
                 <div class="homeslide"><img src="img/home-slide.png"/> </div>

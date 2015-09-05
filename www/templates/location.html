@@ -1,0 +1,51 @@
+<ion-modal-view>
+    <!--ion-header-bar>
+    <!--h1 class="title">Login</h1>
+    <div class="buttons">
+        <button class="button button-clear" ng-click="closeLogin()">Close</button>
+    </div>
+</ion-header-bar-->
+    <ion-content>
+        <form ng-submit="doLogin()" class="signup-form">
+            <div class="location-img" style="width: 100%;height: 240px;position: relative">
+                <img src="img/location.png" alt="Location" height="240" style="width: 100%" />
+                <span class="close" ng-click="closeLocation()" style="position: absolute;top:10px;left: 10px;font-size: 25px;"><i class="icon ion-android-close"></i></span>
+            </div>
+            <h4 style="color: #302e33;text-align: center">Location <span style="color:#1a93c0">preferences</span></h4>
+            <div class="list list-inset">
+                <label class="item item-select">
+                    <i class="icon ion-ios-paw placeholder-icon"></i>
+                    <select style="left:0;">
+                        <option>Country</option>
+                        <option selected>USA</option>
+                        <option>Sweden</option>
+                    </select>
+                </label>
+                
+                
+                 <label class="item item-select">
+                    <i class="icon ion-ios-paw placeholder-icon"></i>
+                    <select style="left:0;">
+                        <option>State</option>
+                        <option selected>NewYourk</option>
+                        <option>Clifton</option>
+                    </select>
+                </label>
+                
+                  <label class="item item-select">
+                    <i class="icon ion-ios-paw placeholder-icon"></i>
+                    <select style="left:0;">
+                        <option>City</option>
+                        <option selected>NewYourk</option>
+                        <option>Clifton</option>
+                    </select>
+                </label>
+            </div>           
+            <div>
+                <button class="button button-block button-royal" ng-click="UpdateLocation()">Save</button>
+            </div>
+        </form>
+    </ion-content>
+</ion-modal-view>
+
+
