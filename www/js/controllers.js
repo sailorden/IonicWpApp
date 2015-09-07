@@ -43,9 +43,28 @@ angular.module('starter.controllers', [])
 
 
 
-        .controller('MainCtrl', function ($scope, $ionicModal, $timeout) {
-            $scope.searchbtn = function() {
-                
+        .controller('MainCtrl', function ($scope, $ionicModal, $state, $ionicHistory) {
+
+            $ionicModal.fromTemplateUrl('templates/location.html', {
+                scope: $scope
+            }).then(function (modal) {
+                $scope.modal = modal;
+            });
+
+            $scope.location = function () {
+                console.log("ok");
+                $scope.modal.show();
+            };
+
+            $scope.closeLocation = function () {
+                $scope.modal.hide();
+            }
+            $scope.searchbtn = function () {
+
+            }
+
+            $scope.showCategoryDetail = function (id) {
+                $state.go('app.categorydetail');
             }
         })
 

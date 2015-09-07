@@ -7899,6 +7899,8 @@ a.button {
   .header-top .header-title {
     color: #1a93c0;
     text-align: center; }
+    .header-top .header-title a {
+      color: #1a93c0; }
 
 .topsearch {
   display: inline-block;
@@ -8201,7 +8203,7 @@ body {
   color: #ae587a; }
 
 .homeslider {
-  max-height: 250px; }
+  max-height: 300px; }
   .homeslider img {
     width: 100%;
     display: block; }
@@ -8211,7 +8213,7 @@ body {
       font-size: 10px; }
 
 .box {
-  min-height: 70px; }
+  min-height: 100px; }
   .box.stay-home {
     background-color: #1a93c0; }
   .box.enjoy-home {
@@ -8225,10 +8227,11 @@ body {
   .box h2 {
     text-align: center;
     color: #fff;
-    line-height: 60px;
+    line-height: 100px;
     padding: 0;
     margin: 0;
-    font-style: italic; }
+    font-style: italic;
+    cursor: pointer; }
 
 .home-list {
   margin-bottom: 0; }
@@ -8359,3 +8362,4 @@ body {
     .place-info p .title {
       color: #000;
       font-weight: 700; }
+

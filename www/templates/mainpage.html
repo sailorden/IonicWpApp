@@ -1,96 +1,98 @@
 <ion-view view-title="">
-    <ion-nav-bar class="bar-light ">
+    <ion-nav-bar class="bar-light no-bar">
 
 
         <ion-nav-title>
-                      
+
         </ion-nav-title>
         <ion-nav-buttons side="left">
             <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
             </button>
         </ion-nav-buttons>
         <ion-nav-buttons side="right" >
-                <span class="topsearch" ng-click="searchbtn()">
+            <span class="topsearch" ng-click="searchbtn()">
                 <i class="icon ion-search"></i>
-                </span>
-            
+            </span>
+
         </ion-nav-buttons>
     </ion-nav-bar>
     <ion-content class="no-header">
         <div class="header-top">
             <div class="header-title">
-                <i class="icon ion-ios-location-outline"></i> <br />
-                New York, USA
+                <span ng-click="location()" style="cursor: pointer"> 
+                    <i class="icon ion-ios-location-outline"></i><br />
+                    New York, USA
+                </span>
+                </div>
             </div>
-        </div>
-        <ion-slide-box on-slide-changed="slideHasChanged($index)" class="homeslider">
-            <ion-slide>
-                <div class="homeslide"><img src="img/home-slide.png"/> </div>
-            </ion-slide>
-            <ion-slide>
-                <div class="homeslide"><img src="img/home-slide.png"/></div>
-            </ion-slide>
-            <ion-slide>
-                <div class="homeslide"><img src="img/home-slide.png"/></div>
-            </ion-slide>
-        </ion-slide-box>
+            <ion-slide-box on-slide-changed="slideHasChanged($index)" auto-play="true" does-continue="true" slide-interval="2000" class="homeslider">
+                <ion-slide>
+                    <div class="homeslide"><img src="img/home-slide.png"/> </div>
+                </ion-slide>
+                <ion-slide>
+                    <div class="homeslide"><img src="img/home-slide.png"/></div>
+                </ion-slide>
+                <ion-slide>
+                    <div class="homeslide"><img src="img/home-slide.png"/></div>
+                </ion-slide>
+            </ion-slide-box>
 
-        <div class="list home-list">
-            <a class="item item-avatar item-category" href="#">
-                <img src="img/juicy.png">
-                <h2>Juicy Burger Co.</h2>
-                <div class="row padding-zero">
-                    <div class="col-70 padding-zero" style="width: 70%;float: left">
-                        <p>
-                            300 Main St.<br />
-                            3.8 km away <br />
-                            (302) 293-2919
-                            <span class="restaurant-name">Fast Food</span>
-                        </p>
+            <div class="list home-list">
+                <a class="item item-avatar item-category" href="#">
+                    <img src="img/juicy.png">
+                    <h2>Juicy Burger Co.</h2>
+                    <div class="row padding-zero">
+                        <div class="col-70 padding-zero" style="width: 70%;float: left">
+                            <p>
+                                300 Main St.<br />
+                                3.8 km away <br />
+                                (302) 293-2919
+                                <span class="restaurant-name">Fast Food</span>
+                            </p>
+                        </div>
+
+                        <div class="col-30 text-right" style="width: 30%;float: right">
+                            <p>$$$$</p>
+                            <img src="img/stars.png" width="45" />
+                        </div>
                     </div>
 
-                    <div class="col-30 text-right" style="width: 30%;float: right">
-                        <p>$$$$</p>
-                        <img src="img/stars.png" width="45" />
+                </a>
+            </div>
+
+            <div class="row padding-zero">
+                <div class="col col-50 padding-zero">
+                    <div class="box enjoy-home" ng-click="showCategoryDetail()">
+                        <h2>ENJOY</h2>
                     </div>
                 </div>
+                <div class="col col-50 padding-zero">
 
-            </a>
-        </div>
+                    <div class="box stay-home" ng-click="showCategoryDetail()">
+                        <h2>STAY</h2>
+                    </div>
+                </div>
+            </div>
 
-        <div class="row padding-zero">
-            <div class="col col-50 padding-zero">
-                <div class="box enjoy-home">
-                    <h2>ENJOY</h2>
+            <div class="row padding-zero">
+                <div class="col col-50 padding-zero">
+                    <div class="box eat-home" ng-click="showCategoryDetail()">
+                        <h2>EAT</h2>
+                    </div>
+                </div>
+                <div class="col col-50 padding-zero">
+                    <div class="box shop-home" ng-click="showCategoryDetail()">
+                        <h2>SHOP</h2>
+                    </div>
                 </div>
             </div>
-            <div class="col col-50 padding-zero">
-
-                <div class="box stay-home">
-                    <h2>STAY</h2>
+            <div class="row padding-zero">
+                <div class="col padding-zero">
+                    <div class="box everyday-home" ng-click="showCategoryDetail()">
+                        <h2>EVERYDAY</h2>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="row padding-zero">
-            <div class="col col-50 padding-zero">
-                <div class="box eat-home">
-                    <h2>EAT</h2>
-                </div>
-            </div>
-            <div class="col col-50 padding-zero">
-                <div class="box shop-home">
-                    <h2>SHOP</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row padding-zero">
-            <div class="col padding-zero">
-                <div class="box everyday-home">
-                    <h2>EVERYDAY</h2>
-                </div>
-            </div>
-        </div>
     </ion-content>
 
 
