@@ -6,7 +6,7 @@
  */
 
 .menu {
-    background-color: $menu-bg;
+    background-color: $menu-bg !important;
 
     .scroll-content {
         z-index: $z-index-menu-scroll-content;
