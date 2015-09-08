@@ -38,7 +38,7 @@ body {
 }
 
 .no-header {
-    top: 0px !important;
+    top: 60px !important;
 }
 .bar.bar-light  {
     border: none;
@@ -214,7 +214,7 @@ body {
 //Home
 
 .homeslider {
-    max-height: 300px;
+    max-height: 240px;
 
     img {
         width: 100%;
@@ -495,5 +495,8 @@ body {
 //Top Bar Hide
 
 .no-bar {
-    
+    height: 0px !important;
+    .title{
+        height: 0px !important;
+    }
 }

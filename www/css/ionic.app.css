@@ -7895,12 +7895,12 @@ a.button {
 
 .header-top {
   background-color: #fff;
-  padding: 10px; }
+  padding: 10px;
+  margin-top: 15px;
+  padding-top: 0px; }
   .header-top .header-title {
     color: #1a93c0;
     text-align: center; }
-    .header-top .header-title a {
-      color: #1a93c0; }
 
 .topsearch {
   display: inline-block;
@@ -7915,7 +7915,8 @@ a.button {
   background-color: #1a93c0 !important; }
   .login-page .login {
     text-align: center;
-    padding: 20px; }
+    padding: 20px;
+    margin-top: 20px; }
     .login-page .login .login-image {
       max-height: 200px;
       margin: 0 auto;
@@ -8078,7 +8079,7 @@ body {
   background: #fff; }
 
 .no-header {
-  top: 0px !important; }
+  top: 60px !important; }
 
 .bar.bar-light {
   border: none;
@@ -8203,7 +8204,7 @@ body {
   color: #ae587a; }
 
 .homeslider {
-  max-height: 300px; }
+  max-height: 240px; }
   .homeslider img {
     width: 100%;
     display: block; }
@@ -8363,3 +8364,7 @@ body {
       color: #000;
       font-weight: 700; }
 
+.no-bar {
+  height: 0px !important; }
+  .no-bar .title {
+    height: 0px !important; }

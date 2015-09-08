@@ -1,7 +1,8 @@
 .header-top {
     background-color: #fff;
     padding: 10px;
-    padding-top:15px;
+    margin-top:15px;
+    padding-top:0px;
     .header-title {
         
         color: #1a93c0;
@@ -32,6 +33,7 @@
     .login {     
         text-align: center;
         padding:20px;
+        margin-top:20px;
         .login-image {
             max-height:200px;
             margin:0 auto;

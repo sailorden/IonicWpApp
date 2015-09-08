@@ -1,5 +1,21 @@
-<ion-view view-title="Search">
-    <ion-content scroll="true">
+<ion-modal-view>
+    
+     <ion-nav-bar class="bar-royal">
+
+
+        <ion-nav-title>
+            Search
+        </ion-nav-title>
+        <ion-nav-buttons side="left">
+          
+        </ion-nav-buttons>
+        <ion-nav-buttons side="right" >
+          <span class="close" ng-click="closeSearch()" style="    position: relative; top: 2px; right: 10px;    font-size: 25px;"><i class="icon ion-android-close"></i></span>
+
+        </ion-nav-buttons>
+    </ion-nav-bar>
+
+    <ion-content scroll="true" class="has-header">
         <div class="row">
             <div class="col">
                 <div class="list list-inset">
@@ -11,7 +27,8 @@
             </div>
         </div>
         <div>
-            <button class="button button-block button-calm" ng-click="SignUp(updateform.$valid)">SEARCH</button>
+            <button class="button button-block button-royal" ng-click="SignUp(updateform.$valid)">SEARCH</button>
         </div>
     </ion-content>
-</ion-view>
+
+</ion-modal-view>

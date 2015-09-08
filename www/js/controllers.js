@@ -59,8 +59,21 @@ angular.module('starter.controllers', [])
             $scope.closeLocation = function () {
                 $scope.modal.hide();
             }
-            $scope.searchbtn = function () {
 
+            $ionicModal.fromTemplateUrl('templates/search.html', {
+                scope: $scope
+            }).then(function (modal) {
+                $scope.modal1 = modal;
+            });
+
+
+
+            $scope.searchbtn = function () {
+                  $scope.modal1.show();
+            }
+            
+            $scope.closeSearch = function() {
+                  $scope.modal1.hide();
             }
 
             $scope.showCategoryDetail = function (id) {
