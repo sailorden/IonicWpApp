@@ -129,7 +129,7 @@ angular.module('starter.controllers', ['ngOpenFB'])
         })
 
 
-        .controller('UserSignIn', function ($scope, $state, $ionicModal, $timeout,Session, ngFB) {
+        .controller('UserSignIn', function ($scope, $state, $ionicModal, $timeout, ngFB) {
 
 
             $scope.signIn = function () {
@@ -203,6 +203,21 @@ angular.module('starter.controllers', ['ngOpenFB'])
                             alert('An error occurred while sharing this session on Facebook');
                         });
             };
+
+
+
+            $scope.profile = function () {
+                ngFB.api({
+                    path: '/me',
+                    params: {fields: 'id,name'}
+                }).then(
+                        function (user) {
+                            $scope.user = user;
+                        },
+                        function (error) {
+                            alert('Facebook error: ' + error.error_description);
+                        });
+            }
         })
 
 
