@@ -4,12 +4,14 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'ion-gallery'])
+angular.module('starter', ['ionic', 'starter.controllers', 'ion-gallery', 'ngOpenFB'])
 
-        .run(function ($ionicPlatform) {
+        .run(function ($ionicPlatform, ngFB) {
             $ionicPlatform.ready(function () {
                 // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-                // for form inputs)
+                // for form inputs)               
+                ngFB.init({appId: '1706754016203351'});
+
                 if (window.cordova && window.cordova.plugins.Keyboard) {
                     cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
                     //cordova.plugins.Keyboard.disableScroll(true);
@@ -175,8 +177,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ion-gallery'])
                             }
                         }
                     })
-                    
-                     .state('app.placeinfo', {
+
+                    .state('app.placeinfo', {
                         url: '/place-information',
                         views: {
                             'menuContent': {
@@ -185,8 +187,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ion-gallery'])
                             }
                         }
                     })
-                    
-                       .state('app.contact', {
+
+                    .state('app.contact', {
                         url: '/contact',
                         views: {
                             'menuContent': {

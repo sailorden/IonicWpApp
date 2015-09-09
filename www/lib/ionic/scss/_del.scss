@@ -1,0 +1,80 @@
+.top{
+
+  h2{
+    color:$balanced;
+  }
+  margin-top:3.0em;
+  h1,h4 {
+    color:white;
+  }
+}
+
+.text-center{
+  text-align:center;
+
+}
+
+.text-right{
+  text-align:right;
+}
+
+.left{
+  float:left;
+}
+.right{
+  float:right;
+}
+.v-center{
+  margin-top:20%;
+}
+
+.bg-green{
+  background-color:$balanced;
+}
+
+.bg-home{
+  background-image:url('../img/bg-home.png');
+  background-size:cover;
+  background-position:center center;
+}
+.footer-text{
+  a{
+    color:white;
+  }
+
+  a:hover{
+    color:$balanced;
+  }
+}
+
+.activity{
+  h4{
+    padding:0 10px;
+    margin-bottom:0;
+  }
+}
+
+.activity-detail{
+
+  padding:5px 0px;
+
+  .item-avatar{
+    padding-left: 60px;
+      min-height: 65px;
+  }
+
+  p{
+    font-size:12px;
+    padding:0;
+  }
+  h2{
+    color:gray;
+
+  }
+
+  .border-right{
+    border-right:solid grey 1px;
+  }
+
+
+}

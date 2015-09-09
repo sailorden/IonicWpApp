@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('starter.controllers', ['ngOpenFB'])
 
         .controller('AppCtrl', function ($scope, $ionicModal, $timeout, $ionicHistory) {
 
@@ -39,10 +39,10 @@ angular.module('starter.controllers', [])
             $scope.closeLocation = function () {
                 $scope.modal1.hide();
             }
-            
-              $scope.SignUp = function () {
+
+            $scope.SignUp = function () {
                 console.log('Doing login', $scope.loginData);
-                
+
                 // Simulate a login delay. Remove this and replace with your login
                 // code if using a login system
                 $timeout(function () {
@@ -50,7 +50,7 @@ angular.module('starter.controllers', [])
                     $state.go('app.main');
                 }, 1000);
             };
-            
+
         })
 
 
@@ -81,11 +81,11 @@ angular.module('starter.controllers', [])
 
 
             $scope.searchbtn = function () {
-                  $scope.modal1.show();
+                $scope.modal1.show();
             }
-            
-            $scope.closeSearch = function() {
-                  $scope.modal1.hide();
+
+            $scope.closeSearch = function () {
+                $scope.modal1.hide();
             }
 
             $scope.showCategoryDetail = function (id) {
@@ -129,7 +129,7 @@ angular.module('starter.controllers', [])
         })
 
 
-        .controller('UserSignIn', function ($scope, $state, $ionicModal, $timeout) {
+        .controller('UserSignIn', function ($scope, $state, $ionicModal, $timeout,Session, ngFB) {
 
 
             $scope.signIn = function () {
@@ -156,17 +156,52 @@ angular.module('starter.controllers', [])
                 $scope.modal.show();
             };
 
-            
+
             // Perform the login action when the user submits the login form
             $scope.SignUp = function () {
                 console.log('Doing login', $scope.loginData);
-                
+
                 // Simulate a login delay. Remove this and replace with your login
                 // code if using a login system
                 $timeout(function () {
                     $scope.closeLogin();
                     $state.go('app.main');
                 }, 1000);
+            };
+
+            $scope.fbLogin = function () {
+                ngFB.login({scope: 'email'}).then(
+                        function (response) {
+                            if (response.status === 'connected') {
+                                console.log('Facebook login succeeded');
+                                console.log(response);
+                                $scope.closeLogin();
+                            } else {
+                                alert('Facebook login failed');
+                            }
+                        });
+            };
+
+
+
+
+            //Share Fb
+
+            $scope.share = function (event) {
+                ngFB.api({
+                    method: 'POST',
+                    path: '/me/feed',
+                    params: {
+                        message: "I'll be attending: '" + $scope.session.title + "' by " +
+                                $scope.session.speaker
+                    }
+                }).then(
+                        function () {
+                            alert('The session was shared on Facebook');
+                        },
+                        function () {
+                            alert('An error occurred while sharing this session on Facebook');
+                        });
             };
         })
 
